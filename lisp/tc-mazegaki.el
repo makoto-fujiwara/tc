@@ -25,6 +25,12 @@
 ;; Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA.
 
 ;;; Code:
+;; ---------------------------------------------------
+;; set-face-underline-p is deleted 27 or later
+(defun set-face-underline-p (face underline &optional frame)
+      (set-face-underline face underline frame)
+      t)
+;; ---------------------------------------------------
 
 (require 'tc)
 
